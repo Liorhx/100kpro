@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0A] text-white font-sans antialiased;
+  }
+}
+
+.bento-card {
+  @apply bg-[#111111] border border-[#1A1A1A] p-6 flex flex-col transition-all hover:border-amber/30;
+}
+
+.bento-card-dark {
+  @apply bg-[#111111] p-8 flex flex-col justify-between text-white border border-[#1A1A1A] shadow-2xl;
+}
+
+.status-tag {
+  @apply flex items-center gap-2 px-3 py-1.5 text-[10px] font-mono font-bold border;
+}
+
+.status-tag-success {
+  @apply bg-emerald-500/10 text-emerald-400 border-emerald-500/20;
+}
+
+.heading-tactical {
+  @apply font-sans font-black uppercase tracking-tighter;
+}
+
+.browser-dot {
+  @apply w-2.5 h-2.5 rounded-full;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-[#0A0A0A];
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 hover:bg-amber/50 transition-colors;
+}
+
+.active-glow {
+  @apply shadow-[0_0_20px_rgba(250,204,21,0.3)];
+}
+
+.seamless-blend {
+  mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
+}
+
+.ambient-glow {
+  filter: blur(100px);
+  background: radial-gradient(circle at center, rgba(250, 204, 21, 0.15) 0%, transparent 70%);
+}
+
