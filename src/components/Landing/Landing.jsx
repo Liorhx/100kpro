@@ -516,7 +516,7 @@ export const Landing = () => {
           "Content-Type": "application/json",
         },
         credentials: "include", // 🔥 important
-        body: JSON.stringify({ amount: 499 }),
+        body: JSON.stringify({ amount: 1 }),
       });
 
       const orderText = await orderRes.text();
@@ -650,7 +650,7 @@ export const Landing = () => {
           <h1 className="heading-tactical text-5xl md:text-[5.5vw] leading-[0.9] text-white">
             CREATE VIRAL SHORTS <br />
             USING A <span className="text-amber">SIMPLE SYSTEM</span> — <br />
-            NO CAMERA, NO EXP.
+            NO CAMERA, NO EXPERIENCE.
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-600 max-w-lg font-mono font-bold leading-relaxed italic">
