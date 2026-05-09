@@ -96,7 +96,7 @@ export const Signup = () => {
         <div className="max-w-md w-full bg-[#111111] p-12 border border-[#1A1A1A] text-left active-glow relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-amber animate-pulse"></div>
           <div className="mb-8">
-            <h2 className="text-2xl font-black uppercase tracking-tighter mb-2 text-white">
+            <h2 className="text-2xl font-black uppercase tracking-widest mb-2 text-white">
               Save Your Token
             </h2>
             <p className="text-[10px] font-mono font-black text-amber uppercase tracking-widest italic">
@@ -153,7 +153,7 @@ export const Signup = () => {
       <div className="max-w-md w-full bg-[#111111] p-12 border border-[#1A1A1A] shadow-2xl relative overflow-hidden text-left">
         <div className="absolute top-0 left-0 w-1 h-full bg-amber/20"></div>
         <div className="mb-12">
-          <h2 className="text-2xl font-black uppercase tracking-tighter mb-1 text-white">
+          <h2 className="text-2xl font-black uppercase tracking-widest mb-1 text-white">
             Create Account
           </h2>
           <p className="text-[8px] font-mono font-black text-zinc-700 uppercase tracking-[0.5em] italic text-left">
@@ -282,7 +282,7 @@ export const Login = () => {
       <div className="max-w-md w-full bg-[#111111] p-12 border border-[#1A1A1A] shadow-2xl relative overflow-hidden text-left">
         <div className="absolute top-0 right-0 w-1 h-full bg-amber/20"></div>
         <div className="mb-12">
-          <h2 className="text-2xl font-black uppercase tracking-tighter mb-1 text-white">
+          <h2 className="text-2xl font-black uppercase tracking-widest mb-1 text-white">
             Sign In
           </h2>
           <p className="text-[8px] font-mono font-black text-zinc-700 uppercase tracking-[0.5em] italic text-left">
@@ -354,7 +354,7 @@ export const Login = () => {
               </button>
             </div>
             <div className="mb-8">
-              <h3 className="text-xl font-black uppercase tracking-tighter text-white mb-2">
+              <h3 className="text-xl font-black uppercase tracking-widest text-white mb-2">
                 Token Recovery
               </h3>
               <p className="text-[10px] font-mono font-black text-zinc-700 uppercase tracking-widest italic">

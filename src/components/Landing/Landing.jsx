@@ -65,12 +65,12 @@ const ProcessSection = () => {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="group relative bg-[#111111] border border-zinc-900 p-8 space-y-4 hover:border-amber/40 transition-all duration-500"
+              className="group relative bg-cyan-500 border border-zinc-900 p-8 space-y-4 hover:border-amber/40 transition-all duration-500"
             >
-              <div className="w-10 h-10 border border-zinc-800 flex items-center justify-center font-mono text-[10px] font-black text-zinc-700 bg-black">
+              <div className="w-10 h-10 border border-zinc-800 flex items-center justify-center font-mono text-[10px] font-black text-cyan-500 bg-black">
                 0{i + 1}
               </div>
-              <h3 className="text-xl font-black text-white tracking-tighter uppercase">
+              <h3 className="text-xl font-black text-white tracking-widest uppercase">
                 {step.title}
               </h3>
               <p className="text-[11px] font-mono font-bold text-zinc-500 uppercase tracking-widest leading-relaxed">
@@ -238,7 +238,7 @@ const FomoSection = ({ onAction }) => {
                   <span className="text-[8px] font-mono text-zinc-600 uppercase tracking-[0.4em] font-black">
                     Time Remaining
                   </span>
-                  <div className="text-3xl font-black text-amber font-mono tracking-tighter">
+                  <div className="text-3xl font-black text-amber font-mono tracking-widest">
                     {formatTime(timeLeft)}
                   </div>
                   <p className="text-[8px] font-mono text-zinc-800 uppercase tracking-widest font-black italic">
@@ -249,7 +249,7 @@ const FomoSection = ({ onAction }) => {
                   <span className="text-[8px] font-mono text-zinc-600 uppercase tracking-[0.4em] font-black">
                     Spots Left
                   </span>
-                  <div className="text-3xl font-black text-red-500 font-mono tracking-tighter">
+                  <div className="text-3xl font-black text-red-500 font-mono tracking-widest">
                     0{seatsLeft} SEATS
                   </div>
                   <p className="text-[8px] font-mono text-red-900 uppercase tracking-widest font-black italic animate-pulse">
@@ -316,28 +316,22 @@ const FinalCTA = ({ onAction }) => {
           {!user?.has_access && (
             <button
               onClick={onAction}
-              className="group relative bg-amber text-black px-20 py-8 font-black text-xs uppercase tracking-[0.4em] active-glow overflow-hidden transition-all hover:scale-105 flex flex-col items-center justify-center gap-2"
+              className="group relative  bg-amber text-black px-20 py-8 font-black  uppercase tracking-[0.4em] active-glow overflow-hidden transition-all hover:scale-105 flex flex-col items-center justify-center gap-2"
             >
-              <span className="text-[10px] opacity-50 line-through text-black/50">
+              <span className="text-2xl opacity-50 line-through text-black/50">
                 ₹5,999
               </span>
-              <div className="flex items-center gap-3">
-                Only ₹499 Indian Rupees
-                <ArrowRight
-                  size={14}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </div>
+              <div className="text-xl ">Only ₹499</div>
             </button>
           )}
           <div className="flex items-center gap-8 text-zinc-700 font-mono text-[9px] font-black uppercase tracking-[0.3em]">
             <span className="flex items-center gap-2 text-amber">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={8} fill="currentColor" />
+                  <Star key={i} size={18} fill="currentColor" />
                 ))}
               </div>
-              <span className="text-zinc-500">4.9 (12,482+ Students)</span>
+              <span className="text-zinc-500">4.9 </span>
             </span>
             <span className="flex items-center gap-2 italic">
               Works with free tools
@@ -460,7 +454,7 @@ const BonusSection = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-black tracking-tighter leading-tight uppercase text-white">
+                  <h3 className="text-2xl font-black tracking-widest leading-tight uppercase text-white">
                     {bonus.title}
                   </h3>
                   <p className="text-[11px] font-mono font-bold text-zinc-500 uppercase tracking-widest leading-relaxed">
@@ -669,17 +663,17 @@ export const Landing = () => {
                   <Loader2 className="animate-spin" size={16} />
                 ) : (
                   <div className="flex flex-col items-center gap-1">
-                    <h3 className="flex items-center gap-2">
+                    <h1 className="flex text-xl items-center gap-2">
                       Enroll Now
                       <ArrowRight
                         size={14}
                         className="group-hover:translate-x-1 transition-transform"
                       />
-                    </h3>
+                    </h1>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex text-2xl items-center gap-3">
                       Only ₹499
-                      <span className="text-[10px] opacity-50 line-through">
+                      <span className=" text-xl opacity-50 line-through ">
                         ₹5,999
                       </span>
                     </div>
@@ -732,7 +726,7 @@ export const Landing = () => {
                     <span className="text-[8px] font-mono text-zinc-600 uppercase tracking-widest font-black">
                       Memory Link
                     </span>
-                    <span className="text-[10px] font-mono text-amber font-black tracking-tighter">
+                    <span className="text-[10px] font-mono text-amber font-black tracking-widest">
                       65%
                     </span>
                   </div>
@@ -745,7 +739,7 @@ export const Landing = () => {
                     <span className="text-[8px] font-mono text-zinc-600 uppercase tracking-widest font-black">
                       Neural Lock
                     </span>
-                    <span className="text-[10px] font-mono text-zinc-500 font-black tracking-tighter">
+                    <span className="text-[10px] font-mono text-zinc-500 font-black tracking-widest">
                       0%
                     </span>
                   </div>

@@ -14,7 +14,7 @@ export const Header = () => {
           <div className="absolute -inset-1 bg-amber/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
         <div className="flex flex-col -space-y-1">
-          <span className="font-sans font-black tracking-tighter text-xl md:text-2xl uppercase leading-none italic text-white">
+          <span className="font-sans font-black tracking-widest text-xl md:text-2xl uppercase leading-none italic text-white">
             100K
             <span className="text-zinc-600 group-hover:text-amber transition-colors">
               PRO
